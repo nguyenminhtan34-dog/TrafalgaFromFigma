@@ -1,0 +1,38 @@
+.download{
+    margin-bottom: 270px;
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content{
+        width: 420px;
+        height: 375px;
+    }
+    &-text{
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 135px;
+        &-image{
+            width: 60%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &-main{
+            flex-direction: column;
+        }
+        &-content{
+            max-width: 340px;
+        }
+        &-image{
+            width: 360px;
+            transform: translate(0, 84px);
+        }
+        img{
+            width: 360px;
+        }
+    }
+    
+    
+}

@@ -1,0 +1,51 @@
+.footer{
+    position: relative;
+    padding: 103px 223px 128px 105px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    color: #FFFFFF;
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-desc{
+        width: 100%;
+        max-width: 391px;
+        height: 84px;
+        mix-blend-mode: normal;
+        line-height: 156%;
+        font-size: 18px; 
+    }
+    &-links{
+       
+        transform: translateX(-40px);
+        
+    }
+    &-item{
+        padding: 5px 0;
+    }
+    &-link{
+        color: #FFFFFF;
+    }
+    @media screen and (max-width: 1023px) {
+        padding: 24px 8px 26px 20px;
+        &-desc{
+            width: 98%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &-main{
+            flex-direction: column;
+        }
+        
+        &-links{
+            transform: translateX(-136px);
+        }
+        &-company{
+            transform: translateX(-100px);
+        }
+    }
+    
+    
+}

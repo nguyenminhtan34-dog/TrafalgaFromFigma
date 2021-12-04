@@ -1,0 +1,48 @@
+.service{
+    position: relative;
+    background: url(../images/Frame.png) no-repeat -100px center / auto;
+    max-width: 952px;
+    margin: 0 auto 80px;
+    margin-bottom: 220px;
+    --columns: 3;
+    &-list{
+        margin-top: 80px;
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-columns: repeat(var(--columns), 1fr);
+        grid-gap: 34px;
+    }
+    &-item{
+        padding: 50px 40px;
+        border-radius: 6px;
+        background-color: #fff;
+    }
+    &-title{
+        color: $black;
+        font-size: 24px;
+        line-height: 56px;
+    }
+    @media screen and (max-width: 1023px) {
+        --columns: 2
+    }
+    @media screen and (max-width: 767px) {
+        --columns: 1;
+        &-img{
+            height: auto;
+        }
+        &-item{
+            padding: 20px 40;
+            box-shadow:1px 5px 10px rgba(0,0,0,.2);
+        }
+        &-list{
+            margin-bottom: 30px;
+        }
+    }
+    
+    
+}
+.btn-service{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

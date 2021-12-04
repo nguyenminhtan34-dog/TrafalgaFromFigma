@@ -1,0 +1,79 @@
+.wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container .fluid{
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+.btn{
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 40px;
+}
+.btn-primary{
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    
+   
+}
+.btn-secondary{
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.global-heading{
+    --heading-color:black;
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 156%;
+    padding-bottom: 26px;
+    margin-bottom: 30px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 56px;
+        height: 2px;
+        background-color: var(--heading-color);
+        bottom: 0;
+    }
+}
+.global-heading--center{
+    text-align: center;
+    &::before{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.global-text{
+    color: $gray;
+    font-family: $font;
+    font-size: 18px;
+    line-height: 167%;
+}
+.center-inline{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 1023px) {
+    .global-heading{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+.btn{
+    padding: 20px 30px;
+}
+}
+
